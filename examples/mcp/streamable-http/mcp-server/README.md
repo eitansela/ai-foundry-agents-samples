@@ -4,9 +4,8 @@
 Run the following commands
 ```
 cd examples/mcp/streamable-http/mcp-server 
-uv init
 uv venv
-uv add mcp
+uv sync
 uv run weather.py
 ```
 
