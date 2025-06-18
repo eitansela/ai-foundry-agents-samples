@@ -24,10 +24,10 @@ In the URL enter: http://localhost:8001/mcp and click Connect.
 Run the following commands
 ```
 az containerapp up \
-    -g <RESOURCE_GROUP_NAME> \
-    -n streamable-weather-mcp \
+    --resource-group <RESOURCE_GROUP_NAME> \
+    --name streamable-weather-mcp \
     --environment mcp \
-    -l <REGION> \
+    --location <REGION> \
     --source .
 ```
 
