@@ -24,6 +24,12 @@ pip install -U agent-framework --pre
 pip install python-dotenv
 ```
 
+### Rename `.env_sample` file to `.env` 
+Update the following Environment Variables:
+- `AZURE_AI_PROJECT_ENDPOINT`
+- `AZURE_AI_MODEL_DEPLOYMENT_NAME`
+- `TAVILY_MCP_SERVER_URL`
+
 ### Run the python program
 ```
 python azure_ai_with_tavily_mcp.py 
