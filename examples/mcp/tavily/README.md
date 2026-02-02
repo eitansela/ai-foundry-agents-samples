@@ -1,9 +1,25 @@
 # Azure AI Agent with Tavily MCP Tool Example
 
-### Set up Python environment
+### Navigate to the Tavily MCP Tool example folder
+
+```
+cd examples/mcp/tavily
+```
+
+### Create and activate Python virtual environment
 ```
 python -m venv .venv
-source .venv/bin/activate #Mac
+```
+#### MacOS/Linux
+```
+source .venv/bin/activate
+```
+#### Windows
+```
+venv\Scripts\activate
+```
+### Install dependencies
+```
 pip install -U agent-framework --pre
 pip install python-dotenv
 ```
