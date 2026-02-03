@@ -43,7 +43,7 @@ async def main() -> None:
                 agent_name="MyTavilyWebSearchAgent",
                 should_cleanup_agent=False,  # Set to False if you want to disable automatic agent cleanup
             ),
-            instructions="You are a helpful assistant that can help answering questions with web search using Taviliy MCP Server.",
+            instructions="You are a helpful assistant that can help answering questions related to web search using Taviliy MCP Server.",
             tools=MCPStreamableHTTPTool(  # Tools defined at agent creation
                 name="Taviliy",
                 url=os.environ["TAVILY_MCP_SERVER_URL"],
