@@ -5,6 +5,7 @@ import asyncio
 from agent_framework import ChatAgent, MCPStreamableHTTPTool
 from agent_framework.azure import AzureAIAgentClient
 from azure.identity.aio import AzureCliCredential
+
 import os
 from dotenv import load_dotenv
 
@@ -50,7 +51,7 @@ async def main() -> None:
             ),
         ) as agent,
     ):
-        query = "Search for news articles about AI startups from the last 7 days."
+        query = "Search for articles about AI startups"
         print(f"User: {query}")
         result = await agent.run(query)
         print(f"{agent.name}: {result}\n")
